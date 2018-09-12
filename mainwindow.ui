@@ -10,6 +10,12 @@
     <height>401</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Muli</family>
+    <italic>true</italic>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Tarea Corta 1</string>
   </property>
@@ -170,6 +176,16 @@
      <string>Ejecutar</string>
     </property>
    </widget>
+   <widget class="QTimeEdit" name="timeEdit">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>10</y>
+      <width>118</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -177,7 +193,7 @@
      <x>0</x>
      <y>0</y>
      <width>658</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>
