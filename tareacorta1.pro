@@ -27,25 +27,11 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     ventanaprincipal.cpp \
-    ../CLionProjects/tareaCorta1/manejo_memoria/UnidadManejoMemoria.cpp \
-    ../CLionProjects/tareaCorta1/manejo_memoria/Pagina.cpp \
-    ../CLionProjects/tareaCorta1/manejo_memoria/MemoriaPrincipal.cpp
 
 HEADERS += \
         mainwindow.h \
     ventanaprincipal.h \
-    ../CLionProjects/tareaCorta1/manejo_memoria/UnidadManejoMemoria.h \
-    ../CLionProjects/tareaCorta1/manejo_memoria/Pagina.h \
-    ../CLionProjects/tareaCorta1/manejo_memoria/MemoriaPrincipal.h
 
 FORMS += \
         mainwindow.ui \
     ventanaprincipal.ui
-
-DISTFILES += \
-    ../CLionProjects/tareaCorta1/pizzas/Suprema.txt \
-    ../CLionProjects/tareaCorta1/pizzas/SoloQueso.txt \
-    ../CLionProjects/tareaCorta1/pizzas/SoloCarne.txt \
-    ../CLionProjects/tareaCorta1/pizzas/Pizzas \
-    ../CLionProjects/tareaCorta1/pizzas/JamonYQueso.txt \
-    ../CLionProjects/tareaCorta1/pizzas/Hawaiana.txt
