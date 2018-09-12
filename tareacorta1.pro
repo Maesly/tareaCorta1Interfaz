@@ -25,12 +25,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    ventanaprincipal.cpp \
+        interfaz/mainwindow.cpp \
+    interfaz/ventanaprincipal.cpp \
+    manejo_memoria/MemoriaPrincipal.cpp \
+    manejo_memoria/Pagina.cpp \
+    manejo_memoria/UnidadManejoMemoria.cpp
 
 HEADERS += \
-        mainwindow.h \
-    ventanaprincipal.h \
+        interfaz/mainwindow.h \
+    interfaz/ventanaprincipal.h \
+    manejo_memoria/MemoriaPrincipal.h \
+    manejo_memoria/Pagina.h \
+    manejo_memoria/UnidadManejoMemoria.h
 
 FORMS += \
         mainwindow.ui \
