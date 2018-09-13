@@ -37,12 +37,13 @@ void UnidadManejoMemoria::ejecutar(){
             pizzas[indice].setProcesoEjecucion();
             //memoriaPrincipal->leer(0);
             memoriaPrincipal->liberarBloque(0);
-            QString s = QString::number(pizzas[indice].getProcesoEjecucion());
-            QString w = QString::fromStdString(pizzas[indice].nombrePizza);
-            bloqueMemoria->item(0,0)->setText(w + s);
             std::cout <<"Entro al proceso :" << pizzas[indice].getProcesoEjecucion() ;
             //system(pause);
             sleep(1);
+            QString s = QString::number(pizzas[indice].getProcesoEjecucion());
+            QString w = QString::fromStdString(pizzas[indice].nombrePizza);
+            bloqueMemoria->item(0,0)->setText(w + s);
+
         }
             indice++;
     }
