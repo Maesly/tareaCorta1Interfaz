@@ -29,21 +29,21 @@ void UnidadManejoMemoria::ingresarPizzasCola(std::vector<QString> pcolaDePizzas)
 
 void UnidadManejoMemoria::ejecutar(){
 
-    while(pizzas.size() != 0){
-        if(pizzas[0].getProcesoEjecucion() < pizzas[0].getCantidadProcesos()){
-            memoriaPrincipal->cargarBloque(pizzas[0].getProcesoEjecucion(),pizzas[0].nombrePizza);
-            pizzas[0].setProcesoEjecucion();
+    int indice = 0;
+
+    while( indice < pizzas.size() ){
+        while( pizzas[indice].getProcesoEjecucion() < pizzas[indice].getCantidadProcesos() ){
+            memoriaPrincipal->cargarBloque(pizzas[indice].getProcesoEjecucion(),pizzas[indice].nombrePizza);
+            pizzas[indice].setProcesoEjecucion();
             //memoriaPrincipal->leer(0);
             memoriaPrincipal->liberarBloque(0);
-            QString s = QString::number(pizzas[0].getProcesoEjecucion());
-            QString w = QString::fromStdString(pizzas[0].nombrePizza);
+            QString s = QString::number(pizzas[indice].getProcesoEjecucion());
+            QString w = QString::fromStdString(pizzas[indice].nombrePizza);
             bloqueMemoria->item(0,0)->setText(w + s);
-            std::cout <<"Entro al proceso :" << pizzas[0].getProcesoEjecucion() ;
+            std::cout <<"Entro al proceso :" << pizzas[indice].getProcesoEjecucion() ;
             //system(pause);
             sleep(1);
-        }else{
-            pizzas.pop_back();
         }
+            indice++;
     }
-
 }
