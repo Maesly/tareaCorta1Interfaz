@@ -14,9 +14,11 @@ void leerTXT::imprimirLineaTXT(int proceso, int tamanoProceso) {
 
 int leerTXT::leerlineaTXT(int lineaLeer, std::string path) {
 
-    archivoALeer.open(RUTAPIZZATXT + path);
+    archivoALeer.open(RUTAPIZZATXT + path + ".txt");
     if(!archivoALeer.is_open()){
         std::cout<< "No se pudo abrir el archivo"<<std::endl;
+        std::cout<< "en leerlinea"<<std::endl;
+
         exit(EXIT_FAILURE);
     }else {
         while (archivoALeer >> proceso >> tamanoProceso) {
@@ -35,6 +37,8 @@ int leerTXT::cantLineasTXT(std::string path) {
     archivoALeer.open(RUTAPIZZATXT + path + ".txt");
     if(!archivoALeer.is_open()){
         std::cout<< "No se pudo abrir el archivo"<<std::endl;
+        std::cout<< "en cantidad lineas"<<std::endl;
+
         exit(EXIT_FAILURE);
     }else{
         int numLineas = 0;

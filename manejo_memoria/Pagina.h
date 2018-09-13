@@ -11,19 +11,19 @@
 class Pagina {
 private:
     leerTXT *leerTXT1 = new leerTXT();
-    std::string nombrePizza;
     int procesoEjecucion = 0;
     int cantidadProcesos;
     std::vector<int> paginas;
 
 public:
 
+    std::string nombrePizza;
 
     Pagina(std::string pnombrePizza);
     void paginar();
 
     void setProcesoEjecucion(){
-        cantidadProcesos++;
+        procesoEjecucion++;
     }
     int getProcesoEjecucion(){
         return procesoEjecucion;
@@ -35,6 +35,8 @@ public:
     int getCantidadInstrucciones(int proceso){
         return paginas[proceso];
     }
+
+
 
 
 };

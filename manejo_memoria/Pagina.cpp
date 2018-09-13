@@ -8,6 +8,7 @@ Pagina::Pagina(std::string pnombrePizza) {
 
     nombrePizza = pnombrePizza;
     cantidadProcesos = leerTXT1->cantLineasTXT(nombrePizza);
+    paginar();
 }
 
 void Pagina::paginar() {

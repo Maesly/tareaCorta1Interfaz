@@ -33,7 +33,7 @@ void MemoriaPrincipal::cargarBloque(int proceso, std::string path) {
         int tamanoBloque = leerDisco->leerlineaTXT(proceso,path) * 1000;
         for (int i = 0; i < tamanoBloque; ++i) {
             memoria[*libres[x].posInicio + i] = proceso;
-            std::cout << i << std::endl;
+            //std::cout << i << std::endl;
         }
     }else{
         std::cout << "No hay espacio disponible para cargar en memoria";
