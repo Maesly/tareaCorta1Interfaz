@@ -1,11 +1,14 @@
 #ifndef UNIDADMANEJOMEMORIA_H
 #define UNIDADMANEJOMEMORIA_H
+#include <QTableWidget>
+#include <vector>
 
+class UnidadManejoMemoria{
+private:
+    QTableWidget *bloqueMemoria;
 
-class UnidadManejoMemoria
-{
 public:
-    UnidadManejoMemoria();
+    UnidadManejoMemoria(QTableWidget *tabla, std::vector<QString> colaDePizzas);
 };
 
 #endif // UNIDADMANEJOMEMORIA_H

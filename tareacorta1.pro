@@ -26,18 +26,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         interfaz/mainwindow.cpp \
-    interfaz/ventanaprincipal.cpp \
     manejo_memoria/MemoriaPrincipal.cpp \
     manejo_memoria/Pagina.cpp \
-    manejo_memoria/UnidadManejoMemoria.cpp
+    manejo_memoria/UnidadManejoMemoria.cpp \
+    manejo_memoria/leerTXT.cpp
 
 HEADERS += \
         interfaz/mainwindow.h \
-    interfaz/ventanaprincipal.h \
     manejo_memoria/MemoriaPrincipal.h \
     manejo_memoria/Pagina.h \
-    manejo_memoria/UnidadManejoMemoria.h
+    manejo_memoria/UnidadManejoMemoria.h \
+    DEFINITIONS.h \
+    manejo_memoria/leerTXT.h
 
 FORMS += \
-        mainwindow.ui \
-    ventanaprincipal.ui
+        mainwindow.ui
+
+DISTFILES += \
+    Pizzas/Hawaiana.txt \
+    Pizzas/JamonYQueso.txt \
+    Pizzas/Pizzas \
+    Pizzas/SoloCarne.txt \
+    Pizzas/SoloQueso.txt \
+    Pizzas/Suprema.txt
